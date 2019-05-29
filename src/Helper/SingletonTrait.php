@@ -5,7 +5,7 @@ trait SingletonTrait
     /**
      * @var $this
      */
-    protected static $instance = null;
+    protected static $instance = null; 
 
     /**
      * @return $this
