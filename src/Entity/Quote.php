@@ -75,4 +75,8 @@ class Quote
     {
         return (string) $quote->id;
     }
+
+    public function findQuoteById($id) {
+        return QuoteRepository::getInstance()->getById($id);
+    }
 }

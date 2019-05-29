@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * class Template
+ */
 class Template
 {
     /**
@@ -47,5 +49,9 @@ class Template
     public function setContent($content) {
         $this->content = $content;
         return $this;
+    }
+
+    public function displayTemplate($subject) {
+        return $this->subject . "\n" . $this->content;
     }
 }
