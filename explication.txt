@@ -1,0 +1,5 @@
+changement apportés:
+- modification des entités avec ajout des getters et des setters
+- deplacement des queries avec repository au niveau des entités
+- retrait des appels static des méthodes dans le templateManager
+- ajout d'une méthode d'affichage pour un template 
