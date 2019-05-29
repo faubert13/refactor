@@ -70,4 +70,12 @@ class Destination
         $this->computerName = $computerName;
         return $this;
     }
+
+    public function findDestinationByQuote($quoteDestinationId) {
+        return DestinationRepository::getInstance()->getById($quoteDestinationId);
+    }
+
+    public function getById($id) {
+        return DestinationRepository::getInstance()->getById($id);
+    }
 }

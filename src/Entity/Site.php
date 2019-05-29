@@ -34,4 +34,8 @@ class Site
         $this->url = $url;
         return $this;
     }
+
+    public function findSiteByQuoteId($quoteId) {
+        return SiteRepository::getInstance()->getById($quote->siteId);
+    }
 }
